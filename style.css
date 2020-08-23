@@ -13,7 +13,7 @@ body {
   box-sizing: border-box;
   width: 100%;
   margin: 0 auto;
-  padding: 4rem 10rem;
+  padding: 4rem 4rem;
 }
 
 /* Body Header */
@@ -80,10 +80,10 @@ body {
 .card {
   box-sizing: border-box;
   width: 90%;
-  height: 40vh;
+  height: auto;
   position: relative;
   margin: 1rem auto;
-  padding: 2rem;
+  padding: 0.5rem 1rem;
   border-radius: 5%;
   background: white; 
   box-shadow: 3px 3px 20px -8px rgb(187, 185, 185);
@@ -91,7 +91,7 @@ body {
 
 /*  Card Content */
 
-.card h2 {
+.card h3 {
   font-weight: 600;
   color: hsl(234, 12%, 34%); 
 }
@@ -99,15 +99,16 @@ body {
 .card p {
   margin: 1rem auto 1rem auto;
   text-align: left;
+  font-size: smaller;
 }
 
 .card img {
-  position: absolute;
   display: block;
-  width: 18%;
+  width: 15%;
   height: auto;
-  right: 2rem;
-  bottom: 2rem;
+  margin-left: auto;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 
@@ -153,8 +154,8 @@ body {
 }
 
 footer {
-  height: 50px;
-  margin-top: 50px;
+  height: auto;
+  margin-top: 2rem;
   background: #F7FDFF;
   color: white;
   text-align: center;
