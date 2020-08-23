@@ -1,7 +1,6 @@
 body {
   max-width: 1440px;
   min-width: 375px;
-  height: auto;
   margin: 0 auto;  
   background: hsl(0, 0%, 98%);
   font-size: 15px;
@@ -25,8 +24,8 @@ body {
 }
 
 #body-header h1{
-  font-weight: 200;
-  color: hsl(229, 6%, 66%);
+  font-weight: 200; 
+  color: hsl(234, 12%, 34%);
   line-height: 1.6rem;
 }
 
@@ -80,12 +79,14 @@ body {
 .card {
   box-sizing: border-box;
   width: 90%;
-  height: auto;
+  height: 200px;
   position: relative;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 0.75rem;
   margin: 1rem auto;
-  padding: 0.5rem 1rem;
-  border-radius: 5%;
-  background: white; 
+  border-radius: 4%;
+  background: white;
   box-shadow: 3px 3px 20px -8px rgb(187, 185, 185);
 }
 
@@ -97,7 +98,7 @@ body {
 }
 
 .card p {
-  margin: 1rem auto 1rem auto;
+  margin: 1rem 2rem 1rem auto;
   text-align: left;
   font-size: smaller;
 }
@@ -114,47 +115,24 @@ body {
 
 /* Card Boundary color */
 #card-1 {
-  border-top: 6px solid hsl(180, 62%, 55%);
+  border-top: 4px solid hsl(180, 62%, 55%);
   align-self: center;
 }
 
 #card-2 {
-  border-top: 6px solid hsl(0, 78%, 62%);
+  border-top: 4px solid hsl(0, 78%, 62%);
 }
 
 #card-3 {
-  border-top: 6px solid hsl(34, 97%, 64%);
+  border-top: 4px solid hsl(34, 97%, 64%);
 }
 
 #card-4 {
-  border-top: 6px solid hsl(212, 86%, 64%);
+  border-top: 4px solid hsl(212, 86%, 64%);
   align-self: center;
 }
 
-/* Small and Medium Screens */
-@media (max-width: 780px) {
-  .container {
-    padding: 4rem 4rem;
-  }
-  #body-header p{
-     width: 100%; 
-  }
-  
-  #card-container .col{
-    width: 100%;
-  }
-  
-  #card-1, #card-3 {
-    align-self: auto;
-  }
-
-  .card img {
-    width: 15%;
-  }
-}
-
 footer {
-  height: auto;
   margin-top: 2rem;
   background: #F7FDFF;
   color: white;
@@ -166,6 +144,35 @@ footer p a {
   font-weight: 600;
   color: grey;
 }
+
+
+/* Small and Medium Screen */
+@media (max-width: 800px) {
+  .container {
+    padding: 4rem 4rem;
+  }
+  #body-header p{
+     width: 100%; 
+  }
+  
+  #card-container .col{
+    width: 100%;
+  }
+
+  .card {
+    height: 25vh;
+  }
+  
+  .card img {
+    width: 10%;
+    
+  }
+
+  #card-1, #card-3 {
+    align-self: auto;
+  }
+}
+
 
 .description-text {
   font-weight: 400;
